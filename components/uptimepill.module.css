@@ -1,0 +1,43 @@
+.uptimepill {
+  height: 2rem;
+  width: 100%;
+  border-radius: 40px;
+  background: rgba(0, 0, 0, 0.17);
+}
+
+.uptimepill + .uptimepill {
+  margin-left: 2px;
+}
+
+.up {
+  background: var(--online);
+}
+
+.paused {
+  background: gray;
+}
+
+.partly {
+  background: var(--partly);
+}
+
+.down {
+  background: var(--offline);
+}
+
+.inner {
+  border-radius: 40px;
+}
+
+.tooltip {
+  font-size: 16px;
+}
+.tooltip b {
+  font-size: 18px;
+}
+
+.tooltipdate {
+  font-size: 0.8em;
+  color: #6c757d;
+  margin: 0;
+}

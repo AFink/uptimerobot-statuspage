@@ -1,0 +1,21 @@
+{
+    "back": "Zurück zur Übersicht",
+    "online": "online",
+    "offline": "offline",
+    "operational": "funktionsfähig",
+    "paused": "pausiert",
+    "uptime": "Laufzeit",
+    "overall": "Langzeitlaufzeit",
+    "responsetime": "Antwortzeit",
+    "avg": "durchschnittlich",
+    "min": "min",
+    "max": "max",
+    "ms": "ms",
+    "currently": "ist derzeit",
+    "up": "Up",
+    "down": "Down",
+    "allservices": "Alle Dienste sind derzeit",
+    "someservices": "Manche Dienste sind derzeit",
+    "en": "English",
+    "de": "Deutsch"
+}

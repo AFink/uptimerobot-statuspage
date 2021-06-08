@@ -1,0 +1,36 @@
+{
+    "uptimerobot": "yourapikey",
+    "monitors": {
+        "Kategorie 1": [
+            {
+                "type": "uptimerobot",
+                "id": "787785840"
+            },
+            {
+                "type": "uptimerobot",
+                "id": "786768774"
+            },
+            {
+                "type": "uptimerobot",
+                "id": "786764795"
+            }
+        ],
+        "Kategorie 2": [
+            {
+                "type": "uptimerobot",
+                "id": "786764795"
+            },
+            {
+                "type": "uptimerobot",
+                "id": "786764795"
+            },
+            {
+                "type": "uptimerobot",
+                "id": "786768774"
+            }, {
+                "type": "uptimerobot",
+                "id": "786764795"
+            }
+        ]
+    }
+}

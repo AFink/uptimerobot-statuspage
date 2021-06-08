@@ -1,0 +1,355 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import "skeleton-screen-css";
+
+.ssc-head-line,
+.ssc-square,
+.ssc-line {
+  display: list-item;
+  height: 100%;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  --border-radius-primary: 26px;
+  --bg-primary: #343a40;
+  --color-primary: #ced4da;
+  --color-primary-hover: #eeeeee;
+  --online: #3bd671;
+  --partly: #f29030;
+  --offline: #df484a;
+}
+
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+  background-color: #212529;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+}
+
+a:hover {
+  text-decoration: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.4;
+  margin: 5px 0 25px;
+}
+
+.online {
+  color: var(--online);
+}
+
+.partly {
+  color: var(--partly);
+}
+
+.offline {
+  color: var(--offline);
+}
+
+.up {
+  color: var(--online);
+}
+
+.paused {
+  color: var(--partly);
+}
+
+.down {
+  color: var(--offline);
+}
+
+.monitors {
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+@media (min-width: 768px) {
+  .monitors {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
+}
+
+.row-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  border-radius: var(--border-radius-primary);
+  background: var(--bg-primary);
+  color: var(--color-primary);
+  transition: transform 0.2s ease;
+  padding: 30px 28px 35px;
+  margin: 15px;
+}
+
+@media (min-width: 768px) {
+  .monitors {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
+
+  .card {
+    margin: 15px 0 15px 15px;
+  }
+}
+
+a.card:hover {
+  transform: translateY(-4px);
+  color: var(--color-primary-hover);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 0rem;
+}
+
+.header h1,
+.header h2 {
+  color: #f8f9fa;
+  margin: 0;
+}
+
+.category .heading {
+  color: #ced4da;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.backlink {
+  color: #d5d8da;
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .category .heading {
+    margin-left: 3rem;
+    text-align: left;
+  }
+  .backlink {
+    /* margin-left: 3rem; */
+    text-align: left;
+  }
+  .marginremover {
+    margin-left: -15px;
+  }
+}
+
+.monitor .name {
+  line-break: anywhere;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.card h1,
+.card h2 {
+  margin-bottom: 0;
+}
+
+/*.mb-2 {
+  margin-top: 2rem;
+} */
+
+footer a {
+  -moz-transition: color 0.2s ease, background-color 0.2s ease,
+    border-bottom-color 0.2s ease;
+  -webkit-transition: color 0.2s ease, background-color 0.2s ease,
+    border-bottom-color 0.2s ease;
+  -ms-transition: color 0.2s ease, background-color 0.2s ease,
+    border-bottom-color 0.2s ease;
+  transition: color 0.2s ease, background-color 0.2s ease,
+    border-bottom-color 0.2s ease;
+  border-bottom: dotted 1px rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  color: inherit;
+}
+footer a:hover {
+  border-bottom-color: transparent;
+  color: inherit;
+  text-decoration: none;
+}
+
+.w-5 {
+  width: 5%;
+}
+.w-30 {
+  width: 30%;
+}
+
+.min-20 {
+  min-width: 20%;
+}
+
+.min-40 {
+  min-width: 40%;
+}
+
+@media (min-width: 765px) {
+  .w-md-30 {
+    width: 30% !important;
+  }
+}

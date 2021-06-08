@@ -1,0 +1,21 @@
+{
+    "back": "Back to the overview",
+    "online": "online",
+    "offline": "offline",
+    "operational": "operational",
+    "paused": "paused",
+    "uptime": "Uptime",
+    "overall": "Overall Uptime",
+    "responsetime": "Response Time",
+    "avg": "avg",
+    "min": "min",
+    "max": "max",
+    "ms": "ms",
+    "currently": "is currently",
+    "up": "Up",
+    "down": "Down",
+    "allservices": "All services are currently",
+    "someservices": "Some services are currently",
+    "en": "English",
+    "de": "Deutsch"
+}
