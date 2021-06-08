@@ -21,11 +21,6 @@ export default function Navbar() {
         <BSNavbar.Toggle aria-controls="basic-navbar-nav" />
         <BSNavbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Link href="/" passHref>
-              <Nav.Link>Home</Nav.Link>
-            </Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-
             <NavDropdown title={t(router.locale)} id="basic-nav-dropdown">
               {router.locales.map((locale) => {
                 return (
