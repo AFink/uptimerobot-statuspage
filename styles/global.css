@@ -353,3 +353,7 @@ footer a:hover {
     width: 30% !important;
   }
 }
+
+.navbar-toggler {
+  box-shadow: none;
+}
