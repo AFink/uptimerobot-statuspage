@@ -355,5 +355,5 @@ footer a:hover {
 }
 
 .navbar-toggler {
-  box-shadow: none;
+  box-shadow: none !important;
 }
