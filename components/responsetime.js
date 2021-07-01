@@ -15,6 +15,19 @@ export default function Responsetime({ dailyResponsetime = [] }) {
       Math.max(dailyResponsetime.length - 30, 0)
     );
   }
+
+  const CustomTooltip = ({ active, payload, label }) => {
+    if (active && payload && payload.length) {
+      return (
+        <div className="custom-tooltip">
+          <p className="label">{payload[0].value}ms</p>
+        </div>
+      );
+    }
+
+    return null;
+  };
+
   return (
     <ResponsiveContainer height="100%" width="100%" minHeight="100px">
       {dailyResponsetime.length > 0 ? (
@@ -30,7 +43,7 @@ export default function Responsetime({ dailyResponsetime = [] }) {
           }}
         >
           <XAxis dataKey="time" hide={true} />
-          <Tooltip />
+          <Tooltip content={<CustomTooltip />} />
           <defs>
             <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
               <stop offset="0%" stopColor="#3bd671" stopOpacity={1} />
